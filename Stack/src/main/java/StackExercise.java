@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 /**
@@ -21,7 +22,7 @@ public class StackExercise {
      * @return a newly instantiated Deque. Deques implement both stack and queue behavior.
      */
     public Deque<String> createNewStack(){
-        Deque<String> temp = new LinkedList<>();
+        Deque<String> temp = new ArrayDeque<>();
         return temp;
     }
 
