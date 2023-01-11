@@ -30,7 +30,7 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        PriorityQueue<String> temp = new PriorityQueue<>();
+        PriorityQueue<String> temp = new PriorityQueue<String>();
         return temp;
     }
 
