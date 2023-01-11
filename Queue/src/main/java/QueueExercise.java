@@ -2,6 +2,7 @@
  * TODO: switch to deque
  */
 
+import java.util.ArrayDeque;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -30,7 +31,7 @@ public class QueueExercise {
      * Stack behavior.
      */
     public Queue<String> createQueue(){
-        PriorityQueue<String> temp = new PriorityQueue<String>();
+        Queue<String> temp = new ArrayDeque();
         return temp;
     }
 
@@ -60,7 +61,7 @@ public class QueueExercise {
      * @return the next String due to be removed (polled) from the Queue<String> (the oldest item in the queue.)
      */
     public String removeFromStartOfQueue(Queue<String> queue){
-        return queue.remove();
+        return queue.poll();
     }
 
     /**
