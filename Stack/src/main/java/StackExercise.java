@@ -40,7 +40,7 @@ public class StackExercise {
      * @param item a String to be added to the deque.
      */
     public void addToTopOfStack(Deque<String> stack, String item){
-        stack.add(item);
+        stack.addFirst(item);
     }
 
     /**
@@ -50,7 +50,7 @@ public class StackExercise {
      * @return the value popped from the top of the deque.
      */
     public String removeFromTopOfStack(Deque<String> stack){
-        return stack.remove();
+        return stack.poll();
     }
     /**
      * Return the value at the top of a deque without removing the value.
